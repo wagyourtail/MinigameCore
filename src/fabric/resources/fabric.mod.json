@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "minigamecore",
+  "version": "${version}",
+  "name": "Minigame Core",
+  "description": "A core for minigame mods, to handle sessions, player data and setup.",
+  "authors": [
+    "wagyourtail"
+  ],
+  "contact": {
+    "homepage": "https://wagyourtail.xyz/",
+    "sources": "https://github.com/wagyourtail/minigame-core"
+  },
+  "license": "MPL-2.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.wagyourtail.minigamecore.fabric.MinigameCoreFabric"
+    ]
+  },
+  "mixins": [
+    "minigamecore.mixins.json",
+    "minigamecore-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ["1.20.5", "1.20.6"]
+  }
+}

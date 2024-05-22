@@ -1,0 +1,6 @@
+{
+  "minigamecore.not_enough_teams": "There are not enough available teams!",
+  "minigamecore.player_already_in_game": "Player %s is already in a game!",
+  "minigamecore.player_not_in_game": "Player %s is not in a game!",
+  "minigamecore.not_allowed_from_console": "This command can't be run from the console without specifying a player to run as!"
+}

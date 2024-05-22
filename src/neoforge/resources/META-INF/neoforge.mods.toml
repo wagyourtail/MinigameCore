@@ -1,0 +1,20 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/wagyourtail/minigame-core"
+license = "MPL-2.0"
+
+[[mods]]
+modId = "minigamecore"
+version = "${version}"
+displayName = "Minigame Core"
+authors = "Wagyourtail"
+description = '''
+    A core for minigame mods, to handle sessions, player data and setup.
+'''
+
+[[dependencies.jsmacros]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.5, 1.20.6]"
+ordering = "NONE"
+side = "BOTH"

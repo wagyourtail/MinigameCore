@@ -1,12 +1,16 @@
+rootProject.name = "MinigameCore"
+
 pluginManagement {
     repositories {
-        maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://maven.architectury.dev/" }
-        maven { url "https://maven.minecraftforge.net/" }
+        maven("https://maven.fabricmc.net/")
+        maven("https://maven.wagyourtail.xyz/releases")
+        maven("https://maven.wagyourtail.xyz/snapshots")
         gradlePluginPortal()
     }
 }
 
-include("common")
-include("fabric")
-include("neoforge")
+val localconfig = file("../UniConfig")
+if (localconfig.exists()) {
+    include(":uniconfig")
+    project(":uniconfig").projectDir = localconfig
+}
